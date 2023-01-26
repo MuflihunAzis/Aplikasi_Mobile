@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".FirstFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cari Jam"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="23dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Keberangkatan!"
+        android:textSize="30sp"
+        android:layout_marginTop="70dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="23dp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="25dp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <SearchView
+                    android:id="@+id/searchSong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:iconifiedByDefault="false"
+                    android:paddingStart="-10dp"
+                    android:queryHint="Cari..."
+                    android:searchIcon="@drawable/ic_baseline_search_24"
+                    android:theme="@style/SearchView"
+                    app:queryBackground="@android:color/transparent" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/id_button_kapansaja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:text="available"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/button_splashscreen"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="280dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/id_button_siang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:text="booking car"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/button_splashscreen"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="150dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/id_button_malam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:text="return car"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/button_splashscreen"
+            android:layout_marginLeft="280dp"
+            android:layout_marginRight="30dp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

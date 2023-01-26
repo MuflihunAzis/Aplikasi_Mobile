@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/profil"
+    tools:context=".ThirdFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profil"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <androidx.cardview.widget.CardView
+        android:foreground="@drawable/effect"
+        android:clickable="true"
+        android:id="@+id/id_card2"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="130dp"
+        >
+
+
+
+        <ImageView
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:src="@drawable/saya"/>
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="30dp"
+            android:layout_marginRight="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_camera_alt_24"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="170dp"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/id_regispassword"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:drawablePadding="10dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Lengkap" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="240dp"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/id_regisp"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:drawablePadding="10dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Email" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="310dp"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/id_regip"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:drawablePadding="10dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Nomor HP" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="515dp"
+        android:text="Simpan"
+        android:textColor="@color/white"
+        android:background="@drawable/button_splashscreen"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_button_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="570dp"
+        android:text="Keluar"
+        android:textColor="@color/white"
+        android:background="@drawable/button_splashscreen"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"
+        tools:ignore="OnClick" />
+
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/signup"
+    android:layout_height="match_parent"
+    tools:context=".Sign_up">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Halo!"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Silahkan Sign In"
+        android:textSize="35dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="350dp"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/id_loginuser"
+                android:layout_width="match_parent"
+                android:drawablePadding="10dp"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:textColor="@color/welcome"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="420dp"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/id_loginpassword"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:drawablePadding="10dp"
+                android:layout_height="wrap_content"
+                android:hint="Password" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lupa Password?"
+        android:textSize="15sp"
+        android:layout_marginTop="490dp"
+        android:layout_marginLeft="260dp"
+        android:textColor="@color/welcome"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/id_button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:text="SIGN IN"
+        android:textColor="@color/white"
+        android:background="@drawable/button_splashscreen"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"/>
+
+    <TextView
+        android:id="@+id/id_loginbackwelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back Welcome"
+        android:textSize="15sp"
+        android:layout_marginTop="610dp"
+        android:gravity="center"
+        android:textColor="@color/welcome"/>
+
+</RelativeLayout>

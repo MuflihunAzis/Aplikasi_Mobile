@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/jadwal"
+    tools:context=".SecondFragment"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/hariini"
+        android:foreground="@drawable/effect"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="By : Muflihun Azis - Selviyana Safitri "
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mining Truck Scheduling Alarm adalah Aplikasi yang memudahkan Driver dalam memilih daftar kendaraan truk proyek yang tersedia secara Real-Time dan Terjadwal serta menyediakan berbagai macam fitur didalamnya  "
+            android:textSize="18sp"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Adapun Fitur yang ada di Mitcsha yaitu : Driver Management dan Set Alarm  "
+            android:textSize="20sp"
+            android:layout_marginTop="280dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/board2"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
